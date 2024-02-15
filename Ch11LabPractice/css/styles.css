@@ -1,0 +1,36 @@
+/*Elissa LaRue
+Feb 14 2024*/
+
+/*header*/
+header {
+    background-color: plum
+}
+/* main */
+
+p {
+    font-size: 20px
+}
+ul {
+    font-size: 20px
+}
+li {
+    font-size: 20px
+}
+
+/*footer*/
+footer {
+    background-color: plum
+}
+a:link{
+    color: red;
+}
+
+a:visited {
+    color: aqua
+}
+a:hover {
+    color: bisque
+}
+a:active {
+    color: blue
+}
