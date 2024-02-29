@@ -1,0 +1,59 @@
+/* Elissa LaRue
+Feb 27 2024 */
+
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%
+}
+
+main, footer { 
+clear: both;
+}
+
+h1{
+	font-family: 'Courier New', monospace;
+	font-weight: 30px;
+}
+
+h2{
+	font-family: 'Georgia', sans-serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+main ul {
+  list-style-image: url(../image/tomato.png);
+}
+
+body{
+	background-color: #b8d1eb;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+	background-color: #c5a98b;
+	padding: 10px;
+}
+
+footer{
+	text-align: center;
+	font-size: .75em;
+	background-color: sienna;
+	padding: 10px 0px 10px 0px;
+}
