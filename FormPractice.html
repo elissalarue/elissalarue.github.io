@@ -1,103 +1,88 @@
+<!DOCTYPE html>
 <!-- Elissa LaRue
      March 05 2024-->
+     <!DOCTYPE html >
+     <html lang="en">
+     <head>
+         <title>Contact Form</title>
+         <meta name="author" content="Your Name">
+         <meta charset="UTF-8">
+         <meta name="description" content="Your Name web developer Boise Idaho">
+         <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+             div {
+                 margin: 10px;
+             }
+     
+             label {
+                 margin-right: 15px;
+                 width: 150px;
+                 display: inline-block;
+             }
+             #text{
+               display: block;
+             }
+         </style>
+     </head>
+     <body>
+         <form action="mailto:elissalarue@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+                <fieldset>
+                 <legend>How do I contact you?</legend>
 
-<!DOCTYPE html >
-<html lang="en">
-<head>
-    <title>Contact Form</title>
-    <meta name="author" content="Your Name">
-    <meta charset="UTF-8">
-    <meta name="description" content="Your Name web developer Boise Idaho">
-    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        div {
-            margin: 10px;
-        }
+                 <div>
+                 <label for="text">Company:</label>
+                   <input type="text" name="Company" value="">             
+                 </div>
+     
+                 <div>
+                 <label for="text">Person to contact:</label>
+                   <input type="text" name="Person" value=""/>
+                 
+                 </div>
 
-        label {
-            margin-right: 15px;
-            width: 150px;
-            display: inline-block;
-        }
-        #text{
-          display: block;
-        }
-    </style>
-</head>
-<body>
-    <form action="mailto:elissalarue@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
-        <!-- Group Fields Together, page 104 -->
-           <fieldset>
-            <legend>How do I contact you?</legend>
-            <!-- Company Select Box, page 97 -->
-            <!-- GAP between comp and box but complete-->
-            <div>
-            	<label="text">Company:</label>
-                <input type="text" name="Company" value="">             
-            </div>
+                 <div>
+                 
+                   <label for="email-address">Email:</label>
+                   <input type="email" name="email_address" id="email-address" placeholder="Email"/>  
+                
+                 </div>
 
-            <!-- Person to Contact Select Box, page 97 -->
-            <!-- GAP between text and box but complete-->
-            <div>
-            	<label="text">Person to contact:</label>
-                <input type="text" name="Person" value=""/>
-            
-            </div>
+                 <div>
+                 
+                   <label for="phone">Phone Number:</label>
+                   <input type="number" name="phone" id="phone" placeholder="000-000-0000"/>
+             
+                 </div>
+                 
+             </fieldset>
+       
 
-            <!-- Email, textbook file rental.html -->	
-            <!--Video 9.9 Building and Testing a Valid Form-->
-            <!--DONE-->
-            <div>
-            
-              <label for="email-address">Email:</label>
-              <input type="email" name="email_address" id="email-address" placeholder="Email"/>  
-           
-            </div>
+             <fieldset>
+                 <legend>What opportunities are available at your company?</legend>
 
-            <!-- Phone, textbook file rental.html-->
-            <!--Video 9.9 Building and Testing a Valid Form-->
-            <!--DONE-->
-            <div>
-            
-              <label for="phone">Phone Number:</label>
-              <input type="number" name="phone" id="phone" placeholder="000-000-0000"/>
-		    
-            </div>
-            
-        </fieldset>
-	
-        <!-- Group Fields Together, page 104 -->
-        <fieldset>
-            <legend>What opportunities are available at your company?</legend>
-            <!--select position--> 
-          <!-- DONE -->
-            <label for="position">Type of Position:</label>
-            <select name="position" id="Position">
-              <option value="Internship">Internship</option>
-              <option value="Part-Time">Part-Time</option>
-              <option value="Full-Time">Full-Time</option>
-              <option value="Contract">Contract</option>
-              <option value="Temporary">Temporary</option>
-              <option value="On Call">On Call</option>
-            </select>
+                 <label for="position">Type of Position:</label>
+                 <select name="position" id="Position">
+                   <option value="Internship">Internship</option>
+                   <option value="Part-Time">Part-Time</option>
+                   <option value="Full-Time">Full-Time</option>
+                   <option value="Contract">Contract</option>
+                   <option value="Temporary">Temporary</option>
+                   <option value="On Call">On Call</option>
+                 </select>
 
-            <!-- Radio Buttons, page 99 --> 
-            <!-- DONE-->
-            <p>How did you find me?</p>
-            <input type="radio" name="Find Me" id="LinkedIn" value="LinkedIn"> <label for="LinkedIn">LinkedIn</label>
-            <input type="radio" name="Find Me" id="JobFair" value="JobFair"> <label for="JobFair">Job Fair</label>
-            <input type="radio" name="Find Me" id="CWICorporatePartner" value="CWICorporatePartner"> <label for="CWICorporatePartner">CWI Corporate Partner</label>
+                 <p>How did you find me?</p>
+                 <input type="radio" name="Find Me" id="LinkedIn" value="LinkedIn"/> <label for="LinkedIn">LinkedIn</label>
+                 <input type="radio" name="Find Me" id="JobFair" value="JobFair"/> <label for="JobFair">Job Fair</label>
+                 <input type="radio" name="Find Me" id="CWICorporatePartner" value="CWICorporatePartner"/> <label for="CWICorporatePartner">CWI Corporate Partner</label>
+         
+                 <div>
 
-
-            <div>
-                <!-- Text Area, textbook file code-9-1.html -->
-                <!--DONE-->
-                <textarea name="textarea" cols="100" rows="10">How should I prepare for the interview?</textarea>
-
-            </div>
-        </fieldset>
-		<input type="submit" id="submit" value="Submit" class="btn">
-     </form>
- </body>
-</html>
+                     <textarea name="textarea" cols="100" rows="10">How should I prepare for the interview?</textarea>
+     
+                 </div>
+             </fieldset>
+         <input type="submit" id="submit" value="Submit" class="btn">
+          </form>
+      </body>
+     </html>
