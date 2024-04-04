@@ -1,0 +1,12 @@
+/*Elissa LaRue
+Apr 4 2024*/
+
+body{
+  background: #FF0000;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 600px){
+  body{
+    background: #0000FF;
+  }
+}
