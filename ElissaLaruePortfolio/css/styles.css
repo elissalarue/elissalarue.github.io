@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'dancing';
+    src: url('../fonts/dancingscript-regular-webfont.woff') format('woff'),
+        url('../fonts/dancingscript-regular-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+/* set width */
+html, body{
+ width: 75%;
+ height: 107%;
+ margin: auto;
+ background-color: black ;
+}
+
+body {
+    background: #ffe6ff;
+    color: #333333;
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+header h1{
+    color:black;
+    text-align: center;
+    margin: 10px;
+    font-family: 'dancing', Georgia, 'Times New Roman';
+    font-size: 3em;
+    
+}
+/* welcome banner */
+.welcome{
+    display: block;
+    margin-top: 10px;;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* navigation bar*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    background-color: #b300b3;
+
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.bar:link{
+    color: black;
+}
+
+.bar:hover{
+    color:aliceblue;
+    background-color: #e600e6;
+    
+}
+.bar:active{
+    color: #6699ff ;
+}
+
+footer{
+    text-align: center;
+
+}
+/*form*/
+input{
+    transition: all 0.5s ease;
+}
+input:focus{
+    font-size: 1.35em;
+    border: 2px solid black;
+    outline: none;
+}
+div {
+    margin: 10px;
+}
+
+
+
+
+
