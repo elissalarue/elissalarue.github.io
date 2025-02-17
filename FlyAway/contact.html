@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Elissa LaRue
+ Jan 28 2025-->
+ <html lang="en">
+  <head>
+    <title>Fly Away Travel</title>
+    <meta name="author" content="Elissa LaRue" >
+    <meta charset="UTF-8" >
+    <meta name="description" content="Make your travels easier with a travel consultant" >
+    <meta name="keywords" content="Travel ideas, travel help, help to book" >
+    <meta name="viewport" content="width=device, initial scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>      
+      <h1>Fly Away Travel</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="bar">About Us</a></li>
+          <li><a href="services.html" class="bar">Services</a></li>
+          <li><a href="contact.html" class="bar">Contact Us</a></li>
+          <li><a href="gallery.html" class="bar">Gallery</a></li>
+        </ul>
+      </nav>    
+    </header>
+    <main>
+      <h1 class="headings">Send us an Inquiry for travel</h1>
+      <form action="confirmation.html" method="post">
+        <div>
+          <label for=email_address>E-mail:</label>
+          <input type=text name=email_address id=email_address>
+          <span>*</span>
+        </div>
+
+        <div>
+          <div>
+            <label for=phone>Phone:</label>
+            <input type=text name=phone id=phone>
+            <span>*</span>
+        </div>
+
+        <div>
+          <label for=first_name>First Name:</label>
+          <input type=text name=first_name id=first_name>
+          <span>*</span>
+        </div>
+        
+        <div>
+          <label for=last_name>Last Name:</label>
+          <input type=text name=last_name id=last_name>
+          <span>*</span>
+        </div>
+
+        <br>
+
+        <div>
+          <label for=description></label>
+          <textarea name="description" rows="15" cols="40">Tell us where you might want to go!</textarea>
+        </div>
+
+        <div class="lowerhalf">
+          <label>Preferred Contact:</label>
+          <input type=radio name=contact id=text value=text checked>Text
+          <input type=radio name=contact id=call value=call checked>Phone-Call
+          <input type=radio name=contact id=email value=email checked>Email
+          <span>*</span>
+        </div>
+
+        <div class="lowerhalf">
+          <label>Terms of Service:</label>
+          <input type=checkbox name=terms id=terms value=yes>I accept
+          <span>*</span>
+        </div>
+
+        <div>
+          <label>&nbsp;</label>
+          <input type=button id=register value=Submit>
+          <input type=button id=reset_form value=Reset>
+      </div>
+
+      </form>
+    </main>
+    <script src=register.js></script>
+    <footer>
+
+    </footer>
+  </body>

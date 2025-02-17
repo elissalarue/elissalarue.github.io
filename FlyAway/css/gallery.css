@@ -1,0 +1,95 @@
+/* This style sheet is only for the about us page due to so much css for the slideshow*/
+
+body {
+  background-image: url("/images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover ;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+header{
+  text-align: center;
+  font-family: monospace;
+  background-color: rgba(225, 225, 225, 0.6);
+  padding: .5em 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/*Nav Bar*/
+nav ul{
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-size: 30px;  
+}
+
+li a{
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.bar:link{
+  text-decoration: none;
+  color:black;
+}
+
+.bar:visited{
+  color:black;
+}
+.bar:hover{
+  background-color: rgba(209, 53, 6, 0.664);
+  padding: 10px 10px;
+  border-radius: 3em;
+  color:black;
+}
+.bar:active{
+  color: black;
+}
+
+/*-----END of NAV& Body-----*/ 
+
+
+/*Slideshow*/
+div{
+  padding:30px;
+
+}
+/*Next and Previous on Slideshow*/
+#prev, #next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 100px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/*position of next button*/
+#next {
+  right: 0;
+  border: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
