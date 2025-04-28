@@ -1,0 +1,167 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jacquard+24&family=UnifrakturMaguntia&display=swap');
+
+
+.metal-family{
+    font-family: "Metal Mania", system-ui;
+}
+
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*background*/
+body {
+  background-image: url("/images/libhall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 2rem;
+}
+
+/*main contect and sections*/
+main, #forbidden, #echoes, #archive{
+  text-align: center;
+  color: white;
+}
+
+/*nav bar and header */
+header{
+  font-family: "Metal Mania";
+  color: #660000;
+  text-align: center;
+  margin-top: 6rem;
+
+}
+h1{
+  font-family: "Metal Mania";
+  font-size: 6rem;
+  transform: scale(2);
+  display: inline-block;
+}
+
+header nav ul li a{
+  list-style-type: none;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.navbar-brand {
+  font-size: 3rem !important;
+}
+
+.navbar:hover {
+  color:#660000;
+}
+
+
+ ul li{
+  list-style-type: none; 
+}
+
+header h2{
+  align-content: center;
+}
+
+#entrance{
+  font-size: 2rem;
+
+}
+#entrance, #archive, #echo, #forbidden{
+  font-family: "Metal Mania";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+/*Settings specific for h2 text at beginning of each section*/
+.intro{
+  font-size: 2rem;
+}
+
+section h2 {
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;  /* Add space below heading */
+  text-align: center;
+  color: #fff;  /* White color for headings */
+}
+
+/*Guest Book*/
+#guestbook{
+  font-family: "UnifrakturMaguntia", cursive;
+  background-image: url("/images/signme.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 6em;
+  font-size: 2rem;
+  color: black;
+}
+
+#guestbook h2{
+  font-family: "UnifrakturMaguntia", cursive;
+  color:black;
+}
+
+#guestbook button{
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #660000;
+}
+
+/* book cards */
+.card-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: .5rem; /* spacing between cards */
+  margin-top: 10px;
+}
+.card {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: left;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+ul .bullets{
+  align-content: flex-start;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #660000;
+}
+

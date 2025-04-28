@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lost Library</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jacquard+24&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+  <header>
+    <h1>The Lost Library</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The Lost Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#entrance">Entrance Hall</a></li>
+            <li class="nav-item"><a class="nav-link" href="#forbidden">Forbidden Wing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#echo">Echo Room</a></li>
+            <li class="nav-item"><a class="nav-link" href="#archive">Archive of the Missing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#notes">Librarian's Notes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="parallax">
+      <!--Main content Entrance Hall-->
+    <section id="entrance">
+      <h2>Entrance Hall</h2>
+      <p>Welcome, traveler. Step carefully — some knowledge was never meant to be found.</p>
+      <span class="badge bg-danger">Danger: Beware of the unknown that lies within and all it speaks!</span>
+    </section>
+      <!--Guest Book-->
+      <section id="guestbook" style="text-align:center; margin-top: 100px;">
+        <h2>Guestbook of the Forgotten</h2>
+        <p>Will you sign your name... and be remembered?</p>
+
+        
+        <input type="text" id="nameInput" placeholder="Write your name..." style="padding: 8px; font-size: 1rem;">
+        <button onclick="signGuestbook()" style="padding: 3px 8px; margin-left: 5px;">Sign</button>
+        
+        <div id="guestResponse" style="margin-top: 20px; font-style: italic;"></div>
+      </section>
+      
+
+<!--The Forbidden Wing Section-->
+    <section id="forbidden">
+      <h2>Forbidden Wing</h2>
+      <p class="intro">Ancient books locked away for a reason. Dare you open them?</p>
+
+      <!--Teeth Beneath-->
+      <div class="card-container">
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/teethn.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Teeth Beneath</h4>
+          <p class="card-text">Author: Unknown <hr> A leather-bound book stitched together with sinew. It details a sleepy village where the earth itself begins to chew on the buildings at night. The last page is wet.</p>      
+        </div>
+      </div>
+
+      <!--Whispers in the Binding-->
+
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/diary.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Whispers in the Binding</h4>
+          <p class="card-text">By: Eliza Nox (Missing, 1883) <hr>A diary from a librarian who went mad cataloging books that whispered when shelved. Her notes grow increasingly panicked, and the margins seem to rewrite themselves.</p>         
+        </div>
+      </div>
+
+      <!--Candle Black-->
+     
+      <div class="card" style="width: 20%">
+        <img class="card-img-top" src="images/candle.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Candle That Burns Black</h4>
+          <p class="card-text">By: Rev. Dorian Valt <hr> A ritual manual that describes a candle which, when lit, slowly consumes the one who lit it — backwards through their own memories. </p>         
+        </div>
+      </div>
+    </div>   
+    </section>
+<!-- End of The Forbidden Wing Section-->
+
+ <!--The Echo Room Section-->
+    <section id="echo">
+      <h2>Echo Room</h2>
+      <p class="intro">Listen closely... the walls remember what was whispered long ago.</p>
+
+      <div class="card-container">
+        
+      <!--Room 404-->
+        <div class="card" style="width: 20%">
+          <img class="card-img-top" src="images/room404.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Room 404 (Live Recording)</h4>
+            <p class="card-text"><hr>A distorted voice tries to describe a room that doesn’t exist in any known building — the more they speak, the more their speech loops, stutters, and changes languages. Near the end, it starts speaking as you.</p>         
+          </div>
+        </div>
+
+      <!--Hollow Choir-->
+
+        <div class="card" style="width:20%">
+          <img class="card-img-top" src="images/choir.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Found Tape: The Hollow Choir</h4>
+            <p class="card-text"><hr>A cassette recovered from an abandoned asylum — it begins with a children’s choir singing sweetly, but halfway through the melody collapses into shrieks, reversed lyrics, and banging doors in the background.</p>         
+          </div>
+        </div>
+
+      <!--Voices-->
+
+      <div class="modal fade"></div>
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/moon.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Calling Voice</h4>
+          <p class="card-text"><hr>An interview with a man who claims the moon speaks to him at night. You hear his words echo faintly behind his voice — but with a delay, like something’s repeating him from behind.</p>         
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+<!--End of The Echo Room Section-->
+
+<!--The Archive of the Missing Section-->
+    <section id="archive">
+      <h2>Archive of the Missing</h2>
+      <p class="intro">Scattered pages and forgotten tomes await your discovery.</p>
+
+
+      <div class="card-container">
+              <!--Harvest Sermon-->
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/sermon.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Final Chronicle of Hollow's End</h4>
+          <p class="card-text"><hr>
+            <ul class="bullets">
+            <li>&#9830; Only Pages 1, 2, and 13 remain.</li>
+            <li>&#9830; A corrupted sermon preaching the arrival of "the second sowing," where the harvest will bleed.</li>
+            <li>&#9830; Missing pages are rumored to explain how to survive it — but no one has ever found them.</li>
+          </ul>
+        </p>         
+        </div>
+      </div>
+
+      <!--Hollows End-->
+
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/house.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Final Chronicle of Hollow's End</h4>
+          <p class="card-text"><hr>
+            <ul class="bullets">
+            <li>&#9830; Describes the downfall of a town that disappeared overnight.</li>
+            <li>&#9830; Last five chapters missing — the story cuts off mid-sentence: "And when the clock struck thirteen—"</li>
+          </ul></p>         
+        </div>
+      </div>
+
+      <!--Codex-->
+
+      <div class="card" style="width:20%">
+        <img class="card-img-top" src="images/codex.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">The Mirror Codex</h4>
+          <p class="card-text"><hr>
+            <ul class="bullets">
+            <li>&#9830; A "reverse" book — all text is mirrored.</li>
+            <li>&#9830; 60% of the book is missing, with footnotes hinting that "reading the full reflection" lets something see you back</li>
+          </ul></p>         
+        </div>
+      </div>
+    </div>
+ 
+    </section>
+<!--End of Archive of the Missing Section-->
+<!--Librarians Notes-->
+
+    <section id="notes">
+      <h2>Librarian's Notes</h2>
+      <p class="intro">The caretaker's words grow unstable. Something is coming...</p>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">Something is coming...</div>
+            <div class="col-md-4 ml-auto">Something is coming...</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ml-auto">Something is coming...</div>
+            <div class="col-md-2 ml-auto">Something is coming...</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ml-auto">Something is coming...</div>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            What is coming?
+          </button>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  You have a summoned a creature, please go before it's too late!
+                </div>
+
+          
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Something is coming...
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Something is coming...
+                </div>
+                <div class="col-4 col-sm-6">
+                  Something is coming...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Lost Library. All rights reserved. Proceed at your own risk.</p>
+  </footer>
+  </div>
+<script src="js/guest.js"></script>
+</body>
+</html>
