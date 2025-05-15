@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Elissa LaRue
+ Jan 28 2025-->
+ <html lang="en">
+  <head>
+    <title>Fly Away Travel</title>
+    <meta name="author" content="Elissa LaRue" >
+    <meta charset="UTF-8" >
+    <meta name="description" content="Make your travels easier with a travel consultant" >
+    <meta name="keywords" content="Travel ideas, travel help, help to book" >
+    <meta name="viewport" content="width=device, initial scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="js/main.ts"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+       $( function() {
+        $( "#accordion" ).accordion({
+          collapsible: true
+        });
+      } );
+    </script>
+  </head>
+  <body>
+    <header>      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fly Away Travel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFlyAway" aria-controls="navbarFlyAway" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarFlyAway">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">About Us</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="calendar.html">Seasons of Travel</a></li>
+            <li><a class="dropdown-item" href="services.html">Packages</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <main class =services>
+      <h1 class="headings">Our Packages</h1>
+      <br>
+      <div id="accordion">
+      <h2>Maldives Tropical Escape&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Maldives, South Asia<br></li>
+          <li><b>Duration:</b> 7 days/6 nights</li>
+          <li><b>Price:</b> $4,500-$8,000 per person</li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Private snorkeling and coral reef tour</li>
+            <li>Sunset cruise with champagne</li>
+            <li>Spa treatments in an overwater bungalow</li>
+            <li>Candlelight beachfront dinner</li>
+          </ul>
+        </ul>        
+      </div>
+      <h2>Parisian Romance&darr;</h2>
+      <div class="backing">
+      <ul class="packages">
+        <li><b>Destination:</b> Paris, France</li>
+        <li><b>Duration:</b> 7 days/6 nights</li>
+        <li><b>Price:</b> $3,500 - $6,500 per person</li>
+        <li><b>Includes:</b>
+        <ul class="listing">
+          <li>Eiffel Tower & Seine River dinner cruise</li>
+          <li>Guided tour of the Louvre & Versailles</li>
+          <li>Wine and cheese tasting in Montmartre</li>
+        </ul>
+      </ul>
+      </div>
+      <h2>Kenya Safari Adventure&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Maasai Mara, Kenya</li>
+          <li><b>Duration:</b> 6 days/5 nights</li>
+          <li><b>Price:</b> $5,000 - $9,000 per person
+          </li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Morning and evening game drives</li>
+            <li>Hot air balloon safari over the savannah</li>
+            <li>Cultural immersion</li>
+            <li>Luxury bush dinner under the stars</li>
+          </ul>            
+        </ul>
+      </div>
+      <h2>Tokyo Temples and Fashion&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Tokyo, Japan</li>
+          <li><b>Duration:</b> 7 days/6 nights</li>
+          <li><b>Price:</b> $3,000 - $5,500 per person</li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Private sushi-making class</li>
+            <li>Tour of Meiji Shrine & Senso-ji Temple</li>
+            <li>Shopping in Shibuya & Harajuku district</li>
+            <li>Day trip to Mount Fuji</li>
+          </ul>
+        </ul>
+      </div>
+      <h2>Bahamas Luxury Cruise&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Bahamas, Caribbean</li>
+          <li><b>Duration:</b> 7 days/6 nights</li>
+          <li><b>Price:</b> $1,500 - $4,500 per person</li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Snorkeling at a private island</li>
+            <li>Catamaran sunset sailing</li>
+            <li>Beach horseback riding</li>
+            <li>Nighttime entertainment & themed parties</li>
+          </ul>
+        </ul>
+      </div>
+      <h2>Santorini Honeymoon Retreat&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Santorini, Greece</li>
+          <li><b>Duration:</b> 7 days/6 nights</li>
+          <li><b>Price:</b> $4,500 - $8,500 per couple</li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Stay in luxury cave hotel</li>
+            <li>Private sunset yacht cruise</li>
+            <li>Wine tasting in a cliffside vineyard</li>
+            <li>Romantic beachfront dinner</li>
+          </ul>
+        </ul>
+      </div>
+      <h2>Grand Canyon Explorer&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Grand Canyon, Arizona, USA</li>
+          <li><b>Duration:</b> 7 days/6 nights</li>
+          <li><b>Price:</b> $2,500 - $4,500 per person</li>
+          <li><b>Inlcudes:</b>
+            <ul class="listing">
+              <li>Scenic helicopter tour over the Grand Canyon</li>
+              <li>Whitewater rafting on the Colorado River</li>
+              <li>Stargazing experience</li>
+              <li>Jeep tour through Antelope Canyon</li>
+            </ul>
+        </ul>
+      </div>
+      <h2>Swiss Alps Ski Retreat&darr;</h2> 
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Zermatt, Switzerland</li>
+          <li><b>Duration:</b> 6 days / 5 nights</li>
+          <li><b>Price:</b> $3,500 - $7,500 per person</li>
+          <li><b>Inlcudes:</b>
+            <ul class="listing">
+              <li>Full ski pass & private lessons</li>
+              <li>Apres-ski hot tub &spa experience</li>
+              <li>Scenic train ride on the Glacier Express</li>
+              <li>Fine dining in a mountain chalet</li>
+            </ul>
+        </ul>
+      </div>
+      <h2>Peruvian Adventure&darr;</h2>
+      <div class="backing">
+        <ul class="packages">
+          <li><b>Destination:</b> Cusco & Machu Picchu, Peru</li>
+          <li><b>Duration:</b> 9 days / 8 nights</li>
+          <li><b>Price:</b> $3,200 - $6,800 per personC</li>
+          <li><b>Includes:</b>
+          <ul class="listing">
+            <li>Guided hike to Machu Picchu</li>
+            <li>Explore Cusco's ancient ruins</li>
+            <li>Amazon rainforest river cruise</li>
+            <li>Peruvian cooking class</li>
+          </ul>
+        </ul>
+      </div>    
+    </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+ </html>
